@@ -1,0 +1,137 @@
+/* 경기천년바탕 */
+@font-face {
+    font-family: 'GyeonggiBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 서울한강M */
+@font-face {
+    font-family: 'SeoulHangangM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 둥근모꼴 + Fixedsys */
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #D6E6F2;
+    vertical-align: middle;
+    font-family: 'DungGeunMo';
+    color: white;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 26px;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+img {
+    width: 200px;
+}
+
+.outer {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.basic-box {
+    width: 400px;
+    height: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: #00a;
+    line-height: 120px;
+    
+}
+
+.contents {
+    line-height: 30px;
+}
+
+.contents h2 {
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+.outer .basic-box {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* none-display */
+#contents1, #contents2, #contents3, #contents4, 
+#contents5, #contents6, #contents7, #loading, #result{
+    display: none;
+}
+
+#start-btn {
+    font-size: 24px;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    background-color: #00a;
+    font-family: 'DungGeunMo';
+}
+
+#start-btn:hover {
+    background-color: #BBBBBB;
+}
+
+.button-margin {
+    display: inline-block;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.button-margin button {
+    display: block;
+    font-size: 16px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    background-color: #00a;
+    font-family: 'DungGeunMo';
+    color: white;
+}
+
+button:hover {
+    background-color: #BBBBBB;
+}
+
+#result h2 {
+    font-family: 'DungGeunMo';
+    font-size: 26px;
+    margin-top: 40px;
+}
+
+#result p {
+    margin-bottom: 20px;
+    padding: 20px;
+    font-family: 'DungGeunMo';
+    font-size: 16px;
+    color: #ffffff;
+}
