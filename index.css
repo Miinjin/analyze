@@ -94,6 +94,19 @@ img {
     font-family: 'DungGeunMo';
 }
 
+#share {
+    font-size: 18px;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    background-color: #00a;
+    font-family: 'DungGeunMo';
+    color: white;
+}
+
 #start-btn:hover {
     background-color: #BBBBBB;
 }
@@ -118,7 +131,7 @@ img {
     color: white;
 }
 
-button:hover {
+button:hover, #share:hover {
     background-color: #BBBBBB;
 }
 

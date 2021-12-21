@@ -89,7 +89,7 @@ function change(id) {
                                 '1퍼센트 남은 배터리로 꾸역꾸역 버티고 있어요.<br/>' + 
                                 '완전히 방전되기 전에<br/> 심신을 환기할 수 있는 새로운 일을 찾고<br/> 재충전의 시간을 가지는 건 어떨까요?';
                                 
-                                result.innerHTML = "<h2>"+type+"</h2>" + "<p>"+desc+"</p>" + "<a href=\"#\">결과 공유</a>";
+                                result.innerHTML = "<h2>"+type+"</h2>" + "<p>"+desc+"</p>" + "<button id=\"share\"type=\"button\" onclick=\"clip(); return false;\">공유하기</button>"
                                 break;
                             case 2: 
                                 type = '손잡이 빠진 문고리';
@@ -97,7 +97,7 @@ function change(id) {
                                 '이미 고장나 버린 마음을 안고 살아가는<br/> 당신은 손잡이 빠진 문고리 성향!<br/>' + 
                                 '많은 고민과 일들로 지쳤다면<br/> 잠깐 쉬어가는 건 어떨까요';
                                 
-                                result.innerHTML = "<h2>"+type+"</h2>" + "<p>"+desc+"</p>" + "<a href=\"#\">결과 공유</a>";
+                                result.innerHTML = "<h2>"+type+"</h2>" + "<p>"+desc+"</p>" + "<button id=\"share\"type=\"button\" onclick=\"clip(); return false;\">공유하기</button>"
                                 break;
                                 // ok
                             case 3:
@@ -107,7 +107,7 @@ function change(id) {
                                 '주변에서 가만두질 않아서<br/> 다소 예민한 상태에요.<br/>' + 
                                 '마음의 여유가 부족해서 그럴 수도 있으니<br/> 조금은 숨을 돌릴 시간을 가져보는 것도 좋아요!';
                                 
-                                result.innerHTML = "<h2>"+type+"</h2>" + "<p>"+desc+"</p>" + "<a href=\"#\">결과 공유</a>";
+                                result.innerHTML = "<h2>"+type+"</h2>" + "<p>"+desc+"</p>" + "<button id=\"share\"type=\"button\" onclick=\"clip(); return false;\">공유하기</button>"
                                 break;
                             case 4:
                                 type = '아스팔트 위에 핀 민들레';
@@ -116,7 +116,7 @@ function change(id) {
                                 '<br/>가끔은 주변에서 이런 모습을 알아주길 바라지만 그렇지 않아도 크게 개의치 않아요.<br/>' + 
                                 '착실한 지금의 삶도 좋지만<br/> 가끔은 새로운 자극을 찾아보는 건 어떨까요?';
                                 
-                                result.innerHTML = "<h2>"+type+"</h2>" + "<p>"+desc+"</p>" + "<a href=\"#\">결과 공유</a>";
+                                result.innerHTML = "<h2>"+type+"</h2>" + "<p>"+desc+"</p>" + "<button id=\"share\"type=\"button\" onclick=\"clip(); return false;\">공유하기</button>"
                                 break;
                             case 5:
                                 type = '자유로운 길고양이';
@@ -126,7 +126,7 @@ function change(id) {
                                 '흥미있는 일에는 누구보다 열정적이지만<br/> 관심이 없으면 눈길도 주지 않아요.<br/>' +
                                 '하나 정도 꾸준히 할 수 있는<br/> 무언가를 찾아보면 어떨까요?';
                                 
-                                result.innerHTML = "<h2>"+type+"</h2>" + "<p>"+desc+"</p>" + "<a href=\"#\">결과 공유</a>";
+                                result.innerHTML = "<h2>"+type+"</h2>" + "<p>"+desc+"</p>" + "<button id=\"share\"type=\"button\" onclick=\"clip(); return false;\">공유하기</button>"
                                 break;
                             case 6:
                                 type = '여유로운 개미';
@@ -135,7 +135,7 @@ function change(id) {
                                 '하지만 그래서 가끔 작은 실수도 있답니다.<br/>' +
                                 '조금은 천천히 하는 습관을 들여보면 어떨까요?';
                                 
-                                result.innerHTML = "<h2>"+type+"</h2>" + "<p>"+desc+"</p>" + "<a href=\"#\">결과 공유</a>";
+                                result.innerHTML = "<h2>"+type+"</h2>" + "<p>"+desc+"</p>" + "<button id=\"share\"type=\"button\" onclick=\"clip(); return false;\">공유하기</button>"
                                 break;
                             case 0:
                                 type = '말랑 폭신한 마시멜로우';
@@ -144,7 +144,7 @@ function change(id) {
                                 '크게 신경 쓰는 일이 잘 없고<br/> 남이 하자는 대로 잘 따르는 편이에요.<br/>' + 
                                 '하지만 그래서 콕 찔려버릴 수도 있으니<br/> 조금은 단단해 지는 것도 필요할지 몰라요.';
                                 
-                                result.innerHTML = "<h2>"+type+"</h2>" + "<p>"+desc+"</p>" + "<a href=\"#\">결과 공유</a>";
+                                result.innerHTML = "<h2>"+type+"</h2>" + "<p>"+desc+"</p>" + "<button id=\"share\"type=\"button\" onclick=\"clip(); return false;\">공유하기</button>"
                                 break;
                             default:
                                 alert('Error!');
@@ -164,4 +164,22 @@ function change(id) {
 // save chosen buttons value
 function save(v) {
     num = num + v;
+}
+
+function shareTwitter() {
+    var sendText = "Analyze: 당신의 상태 분석"; // 전달할 텍스트
+    var sendUrl = "https://miinjin.github.io/analyze/"; // 전달할 url
+    window.open("https://twitter.com/intent/tweet?text=" + sendText + "&url=" + sendUrl);
+}
+
+function clip() {
+    var url = '';
+    var textarea = document.createElement("textarea");
+    document.body.appendChild(textarea);
+    url = window.document.location.href;
+    textarea.value = url;
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    alert("URL이 복사되었습니다.")
 }
