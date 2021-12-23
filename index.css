@@ -163,9 +163,25 @@ button:hover, #share:hover {
     .basic-box {
         width: 320px;
         height: 400px;
-        margin: 0px;
+        margin-top: 20px;
         background-color: #00a;
         line-height: 120px;
         
+    }
+
+    p {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    
+    h2 {
+        margin-top: 20px;
+        font-size: 20px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    #start-btn {
+        font-size: 18px;
     }
 }
