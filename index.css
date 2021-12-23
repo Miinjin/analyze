@@ -53,8 +53,8 @@ img {
 }
 
 .basic-box {
-    width: 400px;
-    height: 500px;
+    width: 65%;
+    height: 70%;
     margin-top: 5%;
     margin-bottom: 5%;
     background-color: #00a;
@@ -157,31 +157,4 @@ button:hover, #share:hover {
 
 #result a:hover {
     background-color: #BBBBBB;
-}
-
-@media (min-width: 375px) {
-    .basic-box {
-        width: 320px;
-        height: 400px;
-        margin-top: 20px;
-        background-color: #00a;
-        line-height: 120px;
-        
-    }
-
-    p {
-        margin-top: 20px;
-        font-size: 14px;
-    }
-    
-    h2 {
-        margin-top: 20px;
-        font-size: 20px;
-        padding-left: 35px;
-        padding-right: 35px;
-    }
-
-    #start-btn {
-        font-size: 18px;
-    }
 }
