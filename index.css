@@ -159,7 +159,7 @@ button:hover, #share:hover {
     background-color: #BBBBBB;
 }
 
-@media (max-width: 375px) {
+@media (min-width: 375px) {
     .basic-box {
         width: 320px;
         height: 400px;
