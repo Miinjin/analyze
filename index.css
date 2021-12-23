@@ -54,7 +54,7 @@ img {
 
 .basic-box {
     width: 400px;
-    height: 80%;
+    height: 500px;
     margin-top: 5%;
     margin-bottom: 5%;
     background-color: #00a;
@@ -157,4 +157,15 @@ button:hover, #share:hover {
 
 #result a:hover {
     background-color: #BBBBBB;
+}
+
+@media (max-width: 320px) {
+    .basic-box {
+        width: 320px;
+        height: 400px;
+        margin: 0px;
+        background-color: #00a;
+        line-height: 120px;
+        
+    }
 }
