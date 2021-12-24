@@ -153,7 +153,7 @@ button:hover, #share:hover {
 
 @media (min-width: 320px) {
     h2 {
-        font-size: 28px;
+        font-size: 26px;
     }
     .outer {
         display: table-cell;
@@ -179,7 +179,7 @@ button:hover, #share:hover {
         font-size: 16px;
     }
     .contents p {
-        font-size: 24px;
+        font-size: 16px;
     }
     .button-margin > button {
         font-size: 20px;
