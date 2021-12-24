@@ -29,12 +29,10 @@ body {
 
 p {
     margin-top: 20px;
-    font-size: 16px;
 }
 
 h2 {
     margin-top: 20px;
-    font-size: 26px;
     padding-left: 35px;
     padding-right: 35px;
 }
@@ -50,16 +48,12 @@ img {
     height: 100%;
     top: 0;
     left: 0;
+    vertical-align: middle;
 }
 
 .basic-box {
-    width: 400px;
-    height: 80%;
-    margin-top: 5%;
-    margin-bottom: 5%;
     background-color: #00a;
     line-height: 120px;
-    
 }
 
 .contents {
@@ -68,7 +62,6 @@ img {
 
 .contents h2 {
     margin-top: 40px;
-    font-size: 22px;
 }
 
 .outer .basic-box {
@@ -83,7 +76,6 @@ img {
 }
 
 #start-btn {
-    font-size: 24px;
     margin: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -92,6 +84,19 @@ img {
     border: none;
     background-color: #00a;
     font-family: 'DungGeunMo';
+}
+
+#share {
+    font-size: 18px;
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    background-color: #00a;
+    font-family: 'DungGeunMo';
+    color: white;
 }
 
 #start-btn:hover {
@@ -118,7 +123,7 @@ img {
     color: white;
 }
 
-button:hover {
+button:hover, #share:hover {
     background-color: #BBBBBB;
 }
 
@@ -134,4 +139,68 @@ button:hover {
     font-family: 'DungGeunMo';
     font-size: 16px;
     color: #ffffff;
+}
+
+#result a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px 5px 10px;
+}
+
+#result a:hover {
+    background-color: #BBBBBB;
+}
+
+@media (min-width: 320px) {
+    h2 {
+        font-size: 20px;
+    }
+    .outer > div.basic-box {
+        display: table;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+    #start-btn {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .contents h2 {
+        font-size: 20px;
+    }
+    .contents p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h2 {
+        font-size: 23px;
+    }
+    .basic-box {
+        width: 600px;
+        height: 500px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    #start-btn {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+
+    .contents h2 {
+        font-size: 22px;
+    }
+
+    .contents p {
+        font-size: 18px;
+    }
 }
