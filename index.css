@@ -29,12 +29,10 @@ body {
 
 p {
     margin-top: 20px;
-    font-size: 16px;
 }
 
 h2 {
     margin-top: 20px;
-    font-size: 26px;
     padding-left: 35px;
     padding-right: 35px;
 }
@@ -53,13 +51,8 @@ img {
 }
 
 .basic-box {
-    width: 65%;
-    height: 70%;
-    margin-top: 5%;
-    margin-bottom: 5%;
     background-color: #00a;
     line-height: 120px;
-    
 }
 
 .contents {
@@ -68,7 +61,6 @@ img {
 
 .contents h2 {
     margin-top: 40px;
-    font-size: 22px;
 }
 
 .outer .basic-box {
@@ -83,7 +75,6 @@ img {
 }
 
 #start-btn {
-    font-size: 24px;
     margin: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -157,4 +148,61 @@ button:hover, #share:hover {
 
 #result a:hover {
     background-color: #BBBBBB;
+}
+
+@media (min-width: 320px) {
+    h2 {
+        font-size: 20px;
+    }
+    .basic-box {
+        width: 400px;
+        height: 500px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    #start-btn {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .contents h2 {
+        font-size: 20px;
+    }
+
+    .contents p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    h2 {
+        font-size: 23px;
+    }
+    .basic-box {
+        width: 600px;
+        height: 500px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    #start-btn {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+
+    .contents h2 {
+        font-size: 22px;
+    }
+
+    .contents p {
+        font-size: 18px;
+    }
 }
