@@ -169,10 +169,13 @@ button:hover, #share:hover {
         font-size: 18px;
     }
     .contents h2 {
-        font-size: 20px;
+        font-size: 30px;
     }
     .contents p {
-        font-size: 16px;
+        font-size: 18px;
+    }
+    .button-margin > button {
+        font-size: 20px;
     }
 }
 
