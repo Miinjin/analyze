@@ -21,7 +21,7 @@
 }
 
 body {
-    background-color: #D6E6F2;
+    background-color: #00a;
     vertical-align: middle;
     font-family: 'DungGeunMo';
     color: white;
@@ -41,11 +41,25 @@ img {
     width: 150px;
 }
 
+#footer {
+    margin: 0px;
+    padding: 0%;
+    clear: both;
+    width: 100%;
+    height: 40px;
+    background-color: #00a;
+}
+
+#footer .copyright p {
+    color: white;
+    font-size: 16px;
+}
+
 .outer {
     position: absolute;
     text-align: center;
     width: 100%;
-    height: 100%;
+    height: 480px;
     top: 0;
     left: 0;
     vertical-align: middle;
