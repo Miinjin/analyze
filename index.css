@@ -100,7 +100,7 @@ img {
     font-family: 'DungGeunMo';
 }
 
-#share {
+#share, #pick {
     font-size: 18px;
     margin: 0px;
     padding-top: 10px;
@@ -137,7 +137,7 @@ img {
     color: white;
 }
 
-button:hover, #share:hover {
+button:hover, #share:hover, #pick:hover {
     background-color: #BBBBBB;
 }
 
